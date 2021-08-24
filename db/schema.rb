@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2021_08_24_192630) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_locations_on_user_id"
+  end
 
   create_table "organizations", force: :cascade do |t|
     t.string "name"
