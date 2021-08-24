@@ -21,6 +21,24 @@ ActiveRecord::Schema.define(version: 2021_08_24_192630) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "interests", force: :cascade do |t|
+    t.bigint "category_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_interests_on_category_id"
+    t.index ["user_id"], name: "index_interests_on_user_id"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.float "latitude"
+    t.float "longitude"
+    t.string "address"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_locations_on_user_id"
+
   create_table "organizations", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -45,5 +63,8 @@ ActiveRecord::Schema.define(version: 2021_08_24_192630) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "interests", "categories"
+  add_foreign_key "interests", "users"
+  add_foreign_key "locations", "users"
   add_foreign_key "organizations", "categories"
 end
