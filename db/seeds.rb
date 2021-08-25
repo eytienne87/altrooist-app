@@ -37,7 +37,6 @@ mental_health = Category.create!(
 homelessness = Category.create!(
   name: "Homelessness"
 )
-
 education = Category.create!(
   name: "Youth and Education"
 )
@@ -91,6 +90,6 @@ interest4 = Interest.create!(
   user: user_4
 )
 interest5 = Interest.create!(
-  category: youth_and_education,
+  category: education,
   user: user_5
 )
