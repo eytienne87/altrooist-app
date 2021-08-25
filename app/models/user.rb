@@ -4,5 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  accepts_nested_attributes_for :location, :interest
+  # accepts_nested_attributes_for :location, :interest
 end
