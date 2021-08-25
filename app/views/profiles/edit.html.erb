@@ -1,7 +1,3 @@
 <h1>This is the profile quiz page</h1>
 
-<%= form_for current_user do |f| %>
-  <%= f.simple_fields_for :locations do |l| %>
-    <%= l.input :address  %>
-  <% end %>
-<% end %>
+<%= render "form" %>

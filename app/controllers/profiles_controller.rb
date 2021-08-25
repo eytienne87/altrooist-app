@@ -1,9 +1,9 @@
 class ProfilesController < ApplicationController
   def edit
-    raise
-    @user = current_user
+    @profile = current_user
   end
 
   def update
+    raise
   end
 end
