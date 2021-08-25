@@ -1,7 +1,7 @@
 <h1>This is the profile quiz page</h1>
 
-<%= form_with model: @user do |user_form| %>
-  <%= fields_for :location, @user.location do |location_form| %>
-    <%= location_form.text_field :address %>
+<%= form_for @user do |f| %>
+  <%= f.simple_fields_for :users do |users_form| %>
+    <%= users_form.input :title  %>
   <% end %>
 <% end %>
