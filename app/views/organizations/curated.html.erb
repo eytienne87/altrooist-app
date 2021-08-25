@@ -1,0 +1,10 @@
+<div>
+  <h1>Welcome to Curated List</h1>
+  <ul>
+    <% @curated.each do |org| %>
+      <li><%= org.name %></li>
+      <li><%= org.address %></li>
+      <li><%= org.description %></li>
+    <% end %>
+  </ul>
+</div>
