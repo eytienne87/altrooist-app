@@ -100,6 +100,9 @@ interest5 = Interest.create!(
 
 Organization.create!(
   name: 'SPCA',
+  email: 'cs@spca.ca',
+  phone: '15148240013',
+  photo_url: '/app/assets/images/spca.jpg',
   description: "Founded in Montreal in 1869, the Society for the Prevention of Cruelty to Animals (now known simply as the Montreal SPCA) was the first animal-welfare organization in Canada.",
   address: "5215 Rue Jean-Talon O, Montréal, QC H4P 1X4",
   latitude: 45.495960,
