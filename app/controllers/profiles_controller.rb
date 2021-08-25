@@ -4,8 +4,17 @@ class ProfilesController < ApplicationController
   end
 
   def update
-    raise
-    @address = params[:user][:locations_attributes]["0"][:address]
-    @interest = params[:user][:interests_attributes]['0'][:category]
+    @profile = current_user
+    current_user.update(strong_params)
+    if current_user.update(strong_params)
+      redirect_to organizations_curated_path
+    else
+      render :edit
+    end
   end
+
+  def strong_params
+    params.require(:user).permit(:locations_attributes, :interests_attributes)
+  end
+
 end
