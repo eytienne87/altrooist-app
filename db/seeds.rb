@@ -3,9 +3,9 @@ puts "Destroying everything..."
 
 Interest.destroy_all
 Location.destroy_all
+Organization.destroy_all
 Category.destroy_all
 User.destroy_all
-Organization.destroy_all
 
 puts "Seeding in progress..."
 
