@@ -1,11 +1,12 @@
 class ProfilesController < ApplicationController
   def edit
     @profile = current_user
+    @profile.interests.build unless @profile.interests.any?
+    @profile.locations.build unless @profile.locations.any?
   end
 
   def update
     @profile = current_user
-    current_user.update(strong_params)
     if current_user.update(strong_params)
       redirect_to organizations_curated_path
     else
@@ -14,7 +15,6 @@ class ProfilesController < ApplicationController
   end
 
   def strong_params
-    params.require(:user).permit(:locations_attributes, :interests_attributes)
+    params.require(:user).permit(locations_attributes: [:id, :address], interests_attributes: [:id, :category_id])
   end
-
 end

@@ -3,8 +3,8 @@
     <%= l.input :address  %>
   <% end %>
   <%= f.simple_fields_for :interests do |i| %>
-    <%= i.input :category, collection: Category.all  %>
-    <%#= i.association :category %>
+    <%#= i.input :category, collection: Category.all  %>
+    <%= i.association :category %>
   <% end %>
   <%= f.submit %>
 <% end %>
