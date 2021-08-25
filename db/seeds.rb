@@ -37,7 +37,6 @@ mental_health = Category.create!(
 homelessness = Category.create!(
   name: "Homelessness"
 )
-
 education = Category.create!(
   name: "Youth and Education"
 )
