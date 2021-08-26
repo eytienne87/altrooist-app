@@ -5,7 +5,7 @@
         <%= render 'location_fields', f: location %>
       <% end %>
       <div class="links">
-        <%= link_to_add_association 'add locations', f, :locations %>
+        <%= link_to_add_association 'add location', f, :locations %>
       </div>
     </div>
   <h3>Interests</h3>
@@ -14,7 +14,7 @@
         <%= render 'interest_fields', f: interest %>
       <% end %>
       <div class="links">
-        <%= link_to_add_association 'add interests', f, :interests %>
+        <%= link_to_add_association 'add category', f, :interests %>
       </div>
     </div>
   <%= f.submit 'Submit' %>

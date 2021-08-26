@@ -6,7 +6,6 @@ class ProfilesController < ApplicationController
   end
 
   def update
-    raise
     @profile = current_user
     if current_user.update(strong_params)
       redirect_to organizations_curated_path
