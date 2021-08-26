@@ -26,6 +26,7 @@ gem 'redis', '~> 4.0'
 # gem 'image_processing', '~> 1.2'
 
 # Custom
+gem 'geocoder'
 gem 'simple_form'
 gem "cocoon"
 
