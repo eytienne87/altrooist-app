@@ -1,6 +1,8 @@
 <div>
-  <h1>Welcome to Show page</h1>
-    <p><%= @org.name %></p>
-    <p><%= @org.address %></p>
-    <p><%= @org.description %></p>
+  <h1><%= @org.name %></h1>
+  <p><%= image_tag(@org.photo_url)%></p>
+  <p><%= @org.email %></p>
+  <p><%= @org.phone %></p>
+  <p><%= @org.address %></p>
+  <p><%= @org.description %></p>
 </div>
