@@ -44,36 +44,54 @@ education = Category.create!(
 )
 # ----------Locations------------
 
-location1 = Location.create!(
+Location.create!(
   latitude: 45.55787658691406,
   longitude: -73.5516357421875,
-  address: "4545 Pierre-de Coubertin avenue, Montreal",
-  user: user_1
+  address: "4545 Pierre-de Coubertin Ave, Montreal, QC H1V 0B2",
+  user: user_1,
+  name: 'home'
 )
-location2 = Location.create!(
+
+Location.create!(
+  latitude: 45.55787658691406,
+  longitude: -73.5516357421875,
+  address: "5333 Casgrain Ave, Montreal, QC H2T 1X3",
+  user: user_1,
+  name: 'work'
+)
+
+Location.create!(
   latitude: 46.062820,
   longitude: -71.937220,
-  address: "2 de la joie street, Victoriaville",
-  user: user_2
+  address: "2 de la joie street, Victoriaville, QC G6P 4B2",
+  user: user_2,
+  name: 'home'
 )
-location3 = Location.create!(
+
+Location.create!(
   latitude: 45.706220,
   longitude: -73.630910,
-  address: "1123 belcourt street, Terrebonne",
-  user: user_3
+  address: "3733 Rue Jarry E, Montréal, QC H1Z 2G1",
+  user: user_2,
+  name: 'work'
 )
-location4 = Location.create!(
+
+Location.create!(
   latitude: 46.584060,
   longitude: -72.713980,
   address: "1790 8th avenue, Shawinigan",
-  user: user_4
+  user: user_3,
+  name: 'home'
 )
-location5 = Location.create!(
+
+Location.create!(
   latitude: 45.505027,
   longitude: -73.554138,
   address: "45 Saint-paul street, Montreal",
-  user: user_5
+  user: user_4,
+  name: 'home'
 )
+
 # ----------Interests------------
 interest1 = Interest.create!(
   category: animals,

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   get '/organizations/curated', to: 'organizations#curated'
   get '/organizations/:id', to: 'organizations#show'
+  get '/organizations/:id/contact', to: 'organizations#contact'
 end
