@@ -1,10 +1,21 @@
 <%= form_for(@profile, url: :profile) do |f| %>
-  <%= f.simple_fields_for :locations do |l| %>
-    <%= l.input :address, label: 'Enter an address:'  %>
-  <% end %>
-  <%= f.simple_fields_for :interests do |i| %>
-    <%#= i.input :category, collection: Category.all  %>
-    <%= i.association :category, label: 'Choose a cause:' %>
-  <% end %>
-  <%= f.submit %>
+  <h3>Locations</h3>
+    <div id="locations">
+      <%= f.simple_fields_for :locations do |l| %>
+        <%= render 'location_fields', :f => address %>
+      <% end %>
+      <div class="links">
+        <%= link_to_add_association 'add locations', f, :locations %>
+      </div>
+    </div>
+  <h3>Interests</h3>
+    <div id="interests">
+      <%= f.simple_fields_for :interests do |i| %>
+        <%= render 'interest_fields', :f => category_id %>
+      <% end %>
+      <div class="links">
+        <%= link_to_add_association 'add interests', f, :interests %>
+      </div>
+    </div>
+  <%= f.submit 'Submit' %>
 <% end %>
