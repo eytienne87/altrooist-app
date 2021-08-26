@@ -1,10 +1,10 @@
 <%= form_for(@profile, url: :profile) do |f| %>
   <%= f.simple_fields_for :locations do |l| %>
-    <%= l.input :address  %>
+    <%= l.input :address, label: 'Enter an address:'  %>
   <% end %>
   <%= f.simple_fields_for :interests do |i| %>
     <%#= i.input :category, collection: Category.all  %>
-    <%= i.association :category %>
+    <%= i.association :category, label: 'Choose a cause:' %>
   <% end %>
   <%= f.submit %>
 <% end %>
