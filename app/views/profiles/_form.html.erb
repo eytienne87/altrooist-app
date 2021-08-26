@@ -1,8 +1,8 @@
-<%= form_for(@profile, url: :profile) do |f| %>
+<%= simple_form_for(@profile, url: :profile) do |f| %>
   <h3>Locations</h3>
     <div id="locations">
-      <%= f.simple_fields_for :locations do |l| %>
-        <%= render 'location_fields', :f => address %>
+      <%= f.simple_fields_for :locations do |location| %>
+        <%= render 'location_fields', f: location %>
       <% end %>
       <div class="links">
         <%= link_to_add_association 'add locations', f, :locations %>
@@ -10,8 +10,8 @@
     </div>
   <h3>Interests</h3>
     <div id="interests">
-      <%= f.simple_fields_for :interests do |i| %>
-        <%= render 'interest_fields', :f => category_id %>
+      <%= f.simple_fields_for :interests do |interest| %>
+        <%= render 'interest_fields', f: interest %>
       <% end %>
       <div class="links">
         <%= link_to_add_association 'add interests', f, :interests %>

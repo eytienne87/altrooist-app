@@ -6,6 +6,7 @@ class ProfilesController < ApplicationController
   end
 
   def update
+    raise
     @profile = current_user
     if current_user.update(strong_params)
       redirect_to organizations_curated_path
@@ -16,8 +17,8 @@ class ProfilesController < ApplicationController
 
   def strong_params
     params.require(:user).permit(
-      locations_attributes: [:id, :address, :done, :_destroy],
-      interests_attributes: [:id, :category_id, :done, :_destroy]
+      locations_attributes: [:id, :address, :_destroy],
+      interests_attributes: [:id, :category_id, :_destroy]
     )
   end
 end

@@ -8,7 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 // Custom
-require("jquery")
 require("@nathanvda/cocoon")
 
 
@@ -27,7 +26,6 @@ require("@nathanvda/cocoon")
 
 // External imports
 import "bootstrap";
-import "cocoon";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
