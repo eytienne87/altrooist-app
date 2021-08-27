@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resource :profile, only: [:update, :edit]
 
-  get '/organizations/curated', to: 'organizations#curated'
-  get '/organizations/:id', to: 'organizations#show'
-  get '/organizations/:id/contact', to: 'organizations#contact'
+  get '/organizations/curated', to: 'organizations#curated', as: :curated
+  get '/organizations/:id', to: 'organizations#show', as: :organization
+  get '/organizations/:id/contact', to: 'organizations#contact', as: :organization_contact
 end
