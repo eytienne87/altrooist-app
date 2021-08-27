@@ -189,7 +189,7 @@ Organization.create!(
   phone: '(514)209-5888',
   photo_url: 'helping.jpeg',
   description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
-  address: "291 Tait street, Saint-Laurent, QC H4M 2K4",
+  address: "2625 Av. de la Salle, Montréal, QC H1V 2L4",
   latitude: 45.502190,
   longitude: -73.675860,
   category: elderly
