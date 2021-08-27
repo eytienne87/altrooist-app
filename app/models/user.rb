@@ -11,4 +11,8 @@ class User < ApplicationRecord
                                 :interests,
                                 reject_if: :all_blank,
                                 allow_destroy: true
+
+  def profile_pending?
+    interests.empty? || locations.empty?
+  end
 end
