@@ -171,4 +171,28 @@ Organization.create!(
   longitude: -73.554428,
   category: education
 )
+# ----------More organizations for pitch------------
+Organization.create!(
+  name: 'Sauvetage Animal Rescue',
+  email: 'info@sar.quebec',
+  phone: '514-773-3911',
+  photo_url: 'SAR.jpeg',
+  description: "Sauvetage Animal Rescue's core mission is to help animals in need",
+  address: "124 Maisonneuve Boulevard O, Montréal, QC H2X 0S1",
+  latitude: 45.50972713094864,
+  longitude: -73.5673830074095,
+  category: animals
+)
+Organization.create!(
+  name: "Helping Seniors",
+  email: 'info@helpingsenior.ca',
+  phone: '(514)209-5888',
+  photo_url: 'helping.jpeg',
+  description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
+  address: "291 Tait street, Saint-Laurent, QC H4M 2K4",
+  latitude: 45.502190,
+  longitude: -73.675860,
+  category: elderly
+)
+
 puts "Finished"
