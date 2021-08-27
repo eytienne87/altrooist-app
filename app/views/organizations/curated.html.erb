@@ -6,6 +6,7 @@
       <%= co.organization.address %><br>
       <%= co.humanize_distance %><br>
       Matched Profile Category: "<%= co.organization.category.name %>"<br>
+      <%= link_to "View Detail", organization_path(co.organization)%>
     </p>
   <% end %>
 </div>
