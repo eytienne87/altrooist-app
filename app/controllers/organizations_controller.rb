@@ -2,6 +2,11 @@ class OrganizationsController < ApplicationController
   before_action :set_org, only: [:show]
 
   def curated
+    if current_user.profile_pending?
+      flash.alert = "We need to know more before showing organizations around you."
+      redirect_to edit_profile_path
+    end
+
     # @curated = Organization.all
     # TODO Need to get user's locations
     locations = current_user.locations
