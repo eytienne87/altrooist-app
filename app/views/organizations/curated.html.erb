@@ -1,10 +1,12 @@
 <div>
   <h1>Welcome to Curated List</h1>
-  <ul>
-    <% @curated.each do |org| %>
-      <li><%= org.name %></li>
-      <li><%= org.address %></li>
-      <li><%= org.description %></li>
-    <% end %>
-  </ul>
+  <% @curated_organizations.each do |co| %>
+    <p>
+      <%= co.organization.name %><br>
+      <%= co.organization.address %><br>
+      <%= co.humanize_distance %><br>
+      Matched Profile Category: "<%= co.organization.category.name %>"<br>
+      <%= link_to "View Detail", organization_path(co.organization)%>
+    </p>
+  <% end %>
 </div>
