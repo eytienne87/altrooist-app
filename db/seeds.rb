@@ -28,10 +28,10 @@ user_5 = User.create!(
 
 # ----------Categories------------
 animals = Category.create!(
-  name: "Animals"
+  name: "Animal Welfare"
 )
 elderly = Category.create!(
-  name: "Elderly"
+  name: "Senior's Assistance"
 )
 mental_health = Category.create!(
   name: "Mental Health"
@@ -40,7 +40,7 @@ homelessness = Category.create!(
   name: "Homelessness"
 )
 education = Category.create!(
-  name: "Youth and Education"
+  name: "Education"
 )
 # ----------Locations------------
 
@@ -172,7 +172,7 @@ Organization.create!(
   category: education
 )
 
-# From Etienne
+# ----------More organizations for pitch------------
 
 Organization.create!(
   name: 'Sauvetage Animal Rescue',
