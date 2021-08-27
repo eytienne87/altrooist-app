@@ -18,6 +18,7 @@ class OrganizationsController < ApplicationController
     end
     # @curated_organizations = @curated_organizations.sort_by(&:distance).uniq(&:organization).first(5)
     @curated_organizations.sort_by!(&:distance).uniq!(&:organization)
+    # @curated_organizations.sort_by!(&:distance)
   end
 
   def show
