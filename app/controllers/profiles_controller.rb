@@ -16,7 +16,7 @@ class ProfilesController < ApplicationController
 
   def strong_params
     params.require(:user).permit(
-      locations_attributes: [:id, :address, :_destroy],
+      locations_attributes: [:id, :address, :name, :_destroy],
       interests_attributes: [:id, :category_id, :_destroy]
     )
   end
