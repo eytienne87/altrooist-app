@@ -45,16 +45,16 @@ education = Category.create!(
 # ----------Locations------------
 
 Location.create!(
-  latitude: 45.55787658691406,
-  longitude: -73.5516357421875,
-  address: "4545 Pierre-de Coubertin Ave, Montreal, QC H1V 0B2",
+  latitude: 45.5565024,
+  longitude: -73.5534072,
+  address: "4320 Pierre-de Coubertin Ave, Montreal, Quebec H1V 1A6",
   user: user_1,
   name: 'home'
 )
 
 Location.create!(
-  latitude: 45.55787658691406,
-  longitude: -73.5516357421875,
+  latitude: 45.526123,
+  longitude: -73.5972601,
   address: "5333 Casgrain Ave, Montreal, QC H2T 1X3",
   user: user_1,
   name: 'work'
@@ -171,4 +171,30 @@ Organization.create!(
   longitude: -73.554428,
   category: education
 )
+
+# From Etienne
+
+Organization.create!(
+  name: 'Sauvetage Animal Rescue',
+  email: 'info@sar.quebec',
+  phone: '514-773-3911',
+  photo_url: 'SAR.jpeg',
+  description: "Sauvetage Animal Rescue's core mission is to help animals in need",
+  address: "124 Maisonneuve Boulevard O, Montréal, QC H2X 0S1",
+  latitude: 45.50972713094864,
+  longitude: -73.5673830074095,
+  category: animals
+)
+Organization.create!(
+  name: "Helping Seniors",
+  email: 'info@helpingsenior.ca',
+  phone: '(514)209-5888',
+  photo_url: 'helping.jpeg',
+  description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
+  address: "3155 Rue Hochelaga, Montréal, QC H1W 1G4",
+  latitude: 45.5565024,
+  longitude: -73.5000000,
+  category: elderly
+)
+
 puts "Finished"
