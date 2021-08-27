@@ -5,6 +5,6 @@
   <p><%= @org.phone %></p>
   <p><%= @org.address %></p>
   <p><%= @org.description %></p>
-  <p><%= link_to "Send email", "" %>
+  <p><%= mail_to(@org.email, @org.name, subject: 'Interest in Volunteering') %>
   <!--<p><%= link_to "Contact", organization_contact_path %>-->
 </div>
