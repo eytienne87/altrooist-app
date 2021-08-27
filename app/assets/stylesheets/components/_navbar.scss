@@ -1,12 +1,10 @@
 .navbar {
   justify-content: space-between;
-  background: #FAF9F6;
+  background: $cream;
+  width: 100vw;
+  height: 15vh;
 }
 
-.navbar .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar .navbar-brand img {
-  width: 40px;
+.navbar .navbar-profile img {
+  width: 75px;
 }
