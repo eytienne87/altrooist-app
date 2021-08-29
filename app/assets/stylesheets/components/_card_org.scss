@@ -1,4 +1,4 @@
-.card-org {
+.card_org {
   overflow: hidden;
   width: 320px;
   height: 120px;
@@ -8,24 +8,24 @@
   align-items: center;
 }
 
-.card-org img {
+.card_org img {
   height: 65px;
   width: 90px;
   object-fit: cover;
 }
 
-.card-org h2 {
-  font-size: 14px;
+.card_org h2 {
+  font-size: 16px;
   font-weight: bold;
   margin: 5px;
 }
 
-.card-org p {
-  font-size: 15px;
+.card_org p {
+  font-size: 14px;
   line-height: 1.4;
   margin-bottom: 10px;
 }
 
-.card-org .card-org-infos {
+.card_org .card_org-infos {
   padding: 16px;
 }
