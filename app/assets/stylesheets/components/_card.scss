@@ -4,7 +4,7 @@
   border-color: $green;
   border-width: 2px;
   border-radius: 5px;
-  background: white;
+  background: $white;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -14,7 +14,6 @@
 
 .card img {
   height: 8vh;
-  width: 84%vh;
   object-fit: cover;
   margin-left: 10px;
 }
