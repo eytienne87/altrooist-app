@@ -6,15 +6,15 @@
   padding: 20px;
 }
 
-.navbar .navbar-profile img {
-  width: 75px;
-}
-
 .form-control {
 margin-top: 12px;
 justify-content: center;
 width: 40vw;
 border-radius: 15px;
+}
+
+.form-search {
+width:20vw;
 }
 
 .form-group {
@@ -35,28 +35,11 @@ height: 5vh;
 .navbar_avatar {
   justify-content: space-between;
   background: $cream;
-  width: 100vw;
+  width: 10vw;
   height: 15vh;
 }
 
-.navbar_avatar .navbar_avatar-search {
-  position: relative;
-  width: 210px;
-  height: 40px;
-  border-color: $coral;
-  border-width: medium;
-  color: #FFFBF3
-}
-
-.navbar_avatar .navbar_avatar-search .btn {
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  right: 5px;
-  color: $coral;
-}
-
-
 .navbar_avatar .navbar_avatar-profile img {
-  width: 75px;
+  width: 60px;
+  border-radius: 90px;
 }
