@@ -1,9 +1,12 @@
-<div class="card">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+<div class="card p-3">
+  <%= image_tag(co.organization.photo_url)%>
   <div class="card-infos">
-    <h2>Organization name</h2>
-    <p>Street<br/>
-    City, Zip
+    <p>
+      <%= co.organization.name %><br>
+      <%= co.organization.address %><br>
+      <%= co.humanize_distance %><br>
+      Matched Profile Category: "<%= co.organization.category.name %>"<br>
+      <%= link_to "View Details", organization_path(co.organization)%>
     </p>
   </div>
 </div>
