@@ -1,0 +1,30 @@
+.navbar_avatar {
+  justify-content: space-between;
+  background: $cream;
+  width: 100vw;
+  height: 15vh;
+}
+
+.navbar_avatar .navbar_avatar-search {
+  position: relative;
+  width: 210 px;
+  height: 40px;
+  border-color: coral;
+  border-width: medium;
+  border-radius: 15px;
+  color: #FFFBF3
+}
+
+.navbar_avatar .navbar_avatar-search .btn {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  color: coral;
+  border-radius: 15px;
+}
+
+
+.navbar_avatar .navbar_avatar-profile img {
+  width: 75px;
+}

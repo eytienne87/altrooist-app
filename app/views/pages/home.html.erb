@@ -1,6 +1,28 @@
-<div>
-  <%= image_tag "http://placehold.it/640x320", class: "img-fluid" %>
+
+<div class= "wrapper">
+  <%=render "components/navbar"%>
 </div>
-<div class="text-center">
-  <%= link_to "Explore!", curated_path, class: 'btn btn-primary' %>
+
+<div class="wrapper">
+  <%=render "components/hero"%>
+</div>
+
+<div class="text-left">
+  <h3>Explore Montreal</h3>
+</div>
+
+<div class="column">
+  <%= render "components/card"%>
+</div>
+
+<div class="column">
+  <%= render "components/card"%>
+</div>
+
+<div class="column">
+  <%= render "components/card"%>
+</div>
+
+<div class="column">
+  <%= render "components/card"%>
 </div>

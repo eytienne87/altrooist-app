@@ -1,12 +1,35 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  display:inline-flex;
+  background: $cream;
+  width: 100vw;
+  height: 5vh;
+  padding: 20px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar .navbar-profile img {
+  width: 75px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+
+
+.form-control {
+margin-top: 12px;
+justify-content: center;
+width: 40vw;
+border-radius: 15px;
+}
+
+.form-group {
+  display: inline-flex;
+  height: 0;
+}
+
+.button {
+margin-top: 12px;
+margin-left: none;
+padding:none;
+border: none;
+width: 5vw;
+border-radius: 15px;
+height: 5vh;
 }

@@ -1,0 +1,15 @@
+.button {
+  color: white;
+  width: 145 px;
+  height: 45px;
+
+  padding: 8px 24px;
+  border-radius: 15px;
+  background: coral;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: coral;
+  color: white;
+}
