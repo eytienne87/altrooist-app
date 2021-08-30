@@ -1,0 +1,36 @@
+.card {
+  width: 90vw;
+  height: 15vh;
+  border-color: $green;
+  border-width: 2px;
+  border-radius: 5px;
+  background: white;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.card img {
+  height: 8vh;
+  width: 84%vh;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.card h2 {
+  font-size: 16px;
+  color:black;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card .card-infos {
+  padding: 16px;
+}
