@@ -1,15 +1,14 @@
 .button {
   color: white;
-  width: 145 px;
+  width: 145px;
   height: 45px;
 
   padding: 8px 24px;
   border-radius: 15px;
-  background: coral;
+  background: $coral;
   transition: background 0.3s ease;
 }
 
 .button:hover {
-  background: coral;
-  color: white;
+  background: $coral;
 }
