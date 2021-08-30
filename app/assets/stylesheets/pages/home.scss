@@ -29,5 +29,17 @@ p {
 }
 
 .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
   height: 5vh;
+  padding-top: 23px;
+}
+
+.navbar-search-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
