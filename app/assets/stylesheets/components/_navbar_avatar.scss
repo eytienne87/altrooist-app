@@ -7,9 +7,9 @@
 
 .navbar_avatar .navbar_avatar-search {
   position: relative;
-  width: 210 px;
+  width: 210px;
   height: 40px;
-  border-color: coral;
+  border-color: $coral;
   border-width: medium;
   border-radius: 15px;
   color: #FFFBF3
@@ -20,7 +20,7 @@
   top: 5px;
   bottom: 5px;
   right: 5px;
-  color: coral;
+  color: $coral;
   border-radius: 15px;
 }
 
