@@ -1,5 +1,9 @@
+<div class= "wrapper">
+  <%=render "components/navbar"%>
+</div>
+
 <div>
-  <h1>Selected for You</h1>
+  <h3>Selected for You</h3>
   <% @curated_organizations.each do |co| %>
     <%= render "components/card", co: co %>
   <% end %>
