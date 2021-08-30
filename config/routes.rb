@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   get '/organizations/curated', to: 'organizations#curated', as: :curated
   get '/organizations/:id', to: 'organizations#show', as: :organization
   get '/organizations/:id/contact', to: 'organizations#contact', as: :organization_contact
+  get '/my_organizations', to: 'organizations#my_organizations'
+  resources :organizations, only: [] do
+    resources :journal_entries, only: [:new, :create]
+  end
 end
