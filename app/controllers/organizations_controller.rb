@@ -24,6 +24,10 @@ class OrganizationsController < ApplicationController
   def show
   end
 
+  def my_organizations
+    @my_organizations = current_user.organizations
+  end
+
   private
 
   def set_org
