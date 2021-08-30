@@ -2,7 +2,7 @@
   display:inline-flex;
   background: $cream;
   width: 100vw;
-  height: 8vh;
+  height: 5vh;
   padding: 20px;
 }
 
@@ -13,7 +13,7 @@
 
 
 .form-control {
-margin-top: 5px;
+margin-top: 12px;
 justify-content: center;
 width: 40vw;
 border-radius: 15px;
@@ -21,11 +21,15 @@ border-radius: 15px;
 
 .form-group {
   display: inline-flex;
-  height: 2vh;
+  height: 0;
 }
 
 .button {
+margin-top: 12px;
+margin-left: none;
+padding:none;
 border: none;
-width: 10vw;
+width: 5vw;
 border-radius: 15px;
+height: 5vh;
 }
