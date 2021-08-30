@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get '/organizations/:id/contact', to: 'organizations#contact', as: :organization_contact
   get '/my_organizations', to: 'organizations#my_organizations'
   resources :organizations, only: [] do
-    resources :journal_entries, only: [:new, :create]
+    resources :journal_entries, only: [:new, :create, :index]
   end
 end

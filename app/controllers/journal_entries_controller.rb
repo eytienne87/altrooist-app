@@ -1,4 +1,11 @@
 class JournalEntriesController < ApplicationController
+
+  def index
+    # TODO: Change the below line to pull only journal entries of a given organizations.
+    @organization = Organization.find(params[:organization_id])
+    @journal_entries = current_user.journal_entries.where(organization: @organization)
+  end
+
   def new
     @journal_entry = JournalEntry.new
     @organization = Organization.find(params[:organization_id])
