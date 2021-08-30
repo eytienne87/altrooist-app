@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>Tell us a bit more about you</h1>
+  <h1>my preferences</h1>
   <%= simple_form_for(@profile, url: :profile) do |f| %>
-    <h3>Locations</h3>
       <div id="locations">
+        <h3>give us an address</h3>
         <%= f.simple_fields_for :locations do |location| %>
           <%= render 'location_fields', f: location %>
         <% end %>
@@ -10,8 +10,8 @@
           <%= link_to_add_association 'add location', f, :locations %>
         </div>
       </div>
-    <h3>Interests</h3>
       <div id="interests">
+        <h3>tell us what you care about the most</h3>
         <%= f.simple_fields_for :interests do |interest| %>
           <%= render 'interest_fields', f: interest %>
         <% end %>
