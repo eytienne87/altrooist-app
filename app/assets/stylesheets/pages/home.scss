@@ -1,5 +1,6 @@
 h1 {
   color: $green;
+  margin: 20px;
   font-family: $headers-font;
   font-size: 48px;
   font-weight: 600;
@@ -7,11 +8,19 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color:white;
+  font-family: $headers-font;
+  font-size:24px;
+}
+
+h3 {
+  color: $green;
   font-family: $body-font;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.4;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 p {
