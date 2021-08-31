@@ -7,6 +7,12 @@
   margin: 0;
 }
 
+.subheader-quiz {
+  margin: 0;
+  color: black;
+  font-size: 16px;
+}
+
 input:placeholder-shown {
    font-style: italic;
    color: rgba(220, 220, 220, 0.8);
@@ -27,4 +33,9 @@ input:placeholder-shown {
 
 .form-delete-btn {
   color: #E02028;
+}
+
+.form-delete-btn:hover {
+  color: #781115;
+  text-decoration: none;
 }
