@@ -1,7 +1,6 @@
 <div class="container">
-  <h1>my preferences</h1>
+  <h1 class="header-quiz">my preferences</h1>
   <%= simple_form_for(@profile, url: :profile) do |f| %>
-    <h3>Locations</h3>
       <div id="locations">
         <%= f.simple_fields_for :locations do |location| %>
           <%= render 'location_fields', f: location %>
@@ -10,7 +9,6 @@
           <%= link_to_add_association '', f, :locations, class: 'fas fa-plus-circle' %>
         </div>
       </div>
-    <h3>Interests</h3>
       <div id="interests">
         <%= f.simple_fields_for :interests do |interest| %>
           <%= render 'interest_fields', f: interest %>

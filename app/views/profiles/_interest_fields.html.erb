@@ -1,4 +1,7 @@
 <div class='nested-fields'>
-  <%= f.association :category, label: 'Interest', label_html: { class: 'label-form' } %>
+  <%= f.association :category,
+                    prompt: 'Animal',
+                    label: 'What do you care about the most?',
+                    label_html: { class: 'label-form' } %>
   <%= link_to_remove_association '', f, class: 'fas fa-minus-circle' %>
 </div>
