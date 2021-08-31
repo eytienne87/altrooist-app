@@ -1,24 +1,32 @@
 <div class="container">
   <h1 class="header-quiz">my preferences</h1>
   <%= simple_form_for(@profile, url: :profile) do |f| %>
-      <div id="locations">
-        <%= f.simple_fields_for :locations do |location| %>
-          <%= render 'location_fields', f: location %>
-        <% end %>
-        <div class="row">
-          <div class="links col-11">
-            <%= link_to_add_association ' Add another place', f, :locations, class: 'fas fa-plus-circle form-add-btn' %>
-          </div>
+    <div id="locations">
+      <div class="row">
+        <h4 class="subheader-quiz col-12">Tell us more about places you go to in a week:</h4>
+      </div>
+      <%= f.simple_fields_for :locations do |location| %>
+        <%= render 'location_fields', f: location %>
+      <% end %>
+      <div class="row">
+        <div class="links col-11">
+          <%= link_to_add_association ' Add another place', f, :locations, class: 'fas fa-plus-circle form-add-btn' %>
         </div>
       </div>
-      <div id="interests">
+    </div>
+    <div id="interests">
+      <div class="row">
+        <h4 class="subheader-quiz col-12">Tell us what you care about the most:</h4>
+      </div>
         <%= f.simple_fields_for :interests do |interest| %>
           <%= render 'interest_fields', f: interest %>
         <% end %>
-        <div class="links">
-          <%= link_to_add_association '', f, :interests, class: 'fas fa-plus-circle' %>
+        <div class="row">
+          <div class="links col-11">
+            <%= link_to_add_association ' Add another interest', f, :interests, class: 'fas fa-plus-circle form-add-btn' %>
+          </div>
         </div>
       </div>
-    <%= f.submit 'Submit' %>
+    <%= f.submit 'Submit', class: 'button' %>
   <% end %>
 </div>
