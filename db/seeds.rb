@@ -3,6 +3,7 @@ puts "Destroying everything..."
 
 Interest.destroy_all
 Location.destroy_all
+JournalEntry.destroy_all
 Organization.destroy_all
 Category.destroy_all
 User.destroy_all
