@@ -17,7 +17,7 @@ class JournalEntriesController < ApplicationController
     if current_user.organizations.include?(@organization)
       @journal_entry = JournalEntry.new(journal_entry_params)
     else
-      @journal_entry = JournalEntry.new(content: "I have just volunterring this organization", emoji: "fas fa-hands-helping")
+      @journal_entry = JournalEntry.new(content: "It really has been a powerful experience so far!", emoji: "fas fa-hands-helping")
     end
 
     @journal_entry.organization = @organization
