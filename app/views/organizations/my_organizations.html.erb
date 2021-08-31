@@ -6,7 +6,8 @@
   <p><%= mo.phone %></p>
   <p><%= mo.email %></p>
   <p><%= link_to "View Journal Entries", organization_journal_entries_path(mo) %></p>
-  <p><%=  link_to(new_organization_journal_entry_path(mo)) do %></p>
-      <%= image_tag("pencil.png") %>
-    <% end %>
+
+  <%=  link_to(new_organization_journal_entry_path(mo)) do %>
+    <p><i class="fas fa-edit"></i></p>
+  <% end %>
 <% end %>
