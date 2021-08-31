@@ -27,6 +27,7 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+    @first_entry = @org.journal_entries.where(user: current_user).empty?
   end
 
   def my_organizations

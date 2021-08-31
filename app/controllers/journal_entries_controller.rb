@@ -13,12 +13,7 @@ class JournalEntriesController < ApplicationController
 
   def create
     @organization = Organization.find(params[:organization_id])
-
-    if current_user.organizations.include?(@organization)
-      @journal_entry = JournalEntry.new(journal_entry_params)
-    else
-      @journal_entry = JournalEntry.new(content: "It really has been a powerful experience so far!", emoji: "fas fa-hands-helping")
-    end
+    @journal_entry = JournalEntry.new(journal_entry_params)
 
     @journal_entry.organization = @organization
     @journal_entry.user = current_user

@@ -5,8 +5,11 @@
   <p><%= @org.phone %></p>
   <p><%= @org.address %></p>
   <p><%= @org.description %></p>
-  <%= simple_form_for([@org, JournalEntry.new]) do |f| %>
-    <%= f.input :content, as: :string, placeholder: "Contact #{@org.name}" %>
-    <%= f.submit "Send" %>
+
+  <% if @first_entry %>
+    <form action="<%= new_organization_journal_entry_path(@org) %>">
+      <input type="text" placeholder="Contact #{@org.name}">
+      <input type="submit">
+    </form>
   <% end %>
 </div>
