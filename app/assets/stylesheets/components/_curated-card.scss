@@ -8,13 +8,13 @@
 }
 
 .curated-card-container {
-    background: #325B20;
+    background: $green;
     margin-top: 50px;
 
 }
 
 .curated-card {
-    border: 2px solid #325B20;
+    border: 2px solid $green;
     position: relative;
     padding: 10px;
     bottom: 8px;
@@ -29,7 +29,11 @@
 }
 
 .curated-card h3 {
-    color: #325B20;
+    color: $green;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
 }
 
 .curated-card h4 {
@@ -39,7 +43,7 @@
 .curated-card hr {
     display: block;
     height: 1px;
-    background-color:#325B20;
+    background-color: $green;
     width: 90%;
 }
 
