@@ -1,10 +1,6 @@
-<div class= "wrapper">
-  <%=render "components/navbar"%>
-</div>
-
 <div>
   <h3>Selected for You</h3>
   <% @curated_organizations.each do |co| %>
-    <%= render "components/card", co: co %>
+    <%= render "components/curated-card", co: co %>
   <% end %>
 </div>
