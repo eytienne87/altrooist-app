@@ -1,12 +1,47 @@
-<div class="curated-card p-3">
-  <%= image_tag(co.organization.photo_url)%>
-  <div class="curated-card-infos">
-    <p>
-      <%= co.organization.name %><br>
-      <%= co.organization.address %><br>
-      <%= co.humanize_distance %><br>
-      Matched Profile Category: "<%= co.organization.category.name %>"<br>
-      <%= link_to "View Details", organization_path(co.organization)%>
-    </p>
+<div class="container">
+  <div class="curated-card-container">
+      <div class="curated-card">
+          <div class="curated-card-top-section">
+              <img src="https://source.unsplash.com/random">
+              <div class="curated-card-info-headers">
+                  <h3 class="curated-card-title">Sauvetage Animal Rescue</h3>
+                  <h4 class="curated-card-address">124 Maisonneuve Boulevard O, Montréal, QC H2X 0S1</h4>
+              </div>
+          </div>
+          <hr class="curated-card-info-divider">
+          <div class="curated-card-info-details">
+              <div class="curated-card-distance-section">
+                  <i class="fas fa-location-arrow"></i>
+                  <p class="curated-card-distance">0.4 km from your home</p>
+              </div>
+              <p class="curated-card-match">#AnimalWelfare</p>
+              <a href="/organizations/82">View Details</a>
+          </div>
+      </div>
+  </div>
+  <div class="curated-card-container">
+      <div class="curated-card">
+          <div class="curated-card-top-section">
+              <div class="image-div-background">
+                  <img src="https://source.unsplash.com/random">
+              </div>
+              <div class="curated-card-info-headers">
+                  <h3 class="curated-card-title">Sauvetage Animal Rescue</h3>
+                  <h4 class="curated-card-address">124 Maisonneuve Boulevard O, Montréal, QC H2X 0S1</h4>
+              </div>
+          </div>
+          <hr class="curated-card-info-divider">
+          <div class="curated-card-info-details">
+              <div class="curated-card-distance-section">
+                  <i class="fas fa-location-arrow"></i>
+                  <p class="curated-card-distance">0.4 km from your home</p>
+              </div>
+              <p class="curated-card-match">#AnimalWelfare</p>
+              <a href="/organizations/82">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
