@@ -5,8 +5,10 @@
         <%= f.simple_fields_for :locations do |location| %>
           <%= render 'location_fields', f: location %>
         <% end %>
-        <div class="links">
-          <%= link_to_add_association '', f, :locations, class: 'fas fa-plus-circle' %>
+        <div class="row">
+          <div class="links col-11">
+            <%= link_to_add_association ' Add another place', f, :locations, class: 'fas fa-plus-circle form-add-btn' %>
+          </div>
         </div>
       </div>
       <div id="interests">

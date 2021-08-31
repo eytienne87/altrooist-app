@@ -9,4 +9,22 @@
 
 input:placeholder-shown {
    font-style: italic;
+   color: rgba(220, 220, 220, 0.8);
+}
+
+.fa-plus-circle:hover {
+    text-decoration: none;
+}
+
+.form-add-btn {
+  width: 100%;
+  text-align: center;
+  color: $green;
+  background-color: rgba(220, 220, 220, 0.8);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-delete-btn {
+  color: #E02028;
 }
