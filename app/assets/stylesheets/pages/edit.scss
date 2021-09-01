@@ -18,6 +18,11 @@ input:placeholder-shown {
    color: rgba(220, 220, 220, 0.8);
 }
 
+input:prompt-shown {
+   font-style: italic;
+   color: rgba(220, 220, 220, 0.8);
+}
+
 .fa-plus-circle:hover {
     text-decoration: none;
 }
@@ -38,4 +43,11 @@ input:placeholder-shown {
 .form-delete-btn:hover {
   color: #781115;
   text-decoration: none;
+}
+
+.delete-btn-margin-bottom {
+  margin-bottom: 1rem;
+}
+.fields-delete-btn-margin-bottom {
+  margin-bottom: -8.1px;
 }
