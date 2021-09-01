@@ -1,4 +1,5 @@
-meta_product_name: "AltrooistApp"
+meta_product_name: "Altrooist"
 meta_title: "Altrooist - Kindness in action"
-meta_description: "100+ volunteer opportunities across Quebec, curated search results just for you."
+meta_description: "Altrooist is a web-based application serving the province of Quebec which helps users find organizations at which to volunteer based on location and interest"
 meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
