@@ -1,9 +1,11 @@
-<div class="navbar-container d-flex">
+<div class="d-flex align-items-center justify-content-around py-2">
   <%= image_tag "altrooist_logo_2.png", alt: "Altrooist Logo", class:"navbar-logo"%>
 
   <%= simple_form_for :search, url: root_path, method: :get do |f| %>
-    <input class="search-string" type="text" name="search[query]" id="search_query" placeholder ="search by city"/>
-    <search-bar-button name="search-bar-button" type="submit" class="search-bar-button fas fa-search"/>
+    <div class="search-bar">
+      <input class="search-string" type="text" name="search[query]" id="search_query" placeholder ="search by city"/>
+      <search-bar-button name="search-bar-button" type="submit" class="search-bar-button fas fa-search"/>
+    </div>
   <% end %>
 
   <div class="navbar_avatar">

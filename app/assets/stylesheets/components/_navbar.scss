@@ -1,7 +1,8 @@
-.navbar-container {
+.navbar {
   align-items: center;
   justify-content: space-between;
-  margin: none;
+  padding: none;
+  width: 100vw;
 }
 
 .navbar-logo {
@@ -9,8 +10,15 @@
   width: auto;
 }
 
+.search-bar {
+  position: relative;
+}
+
 .search-bar-button {
   color: $coral;
   width: 5px;
   height: inherit;
+  position: absolute;
+  right: 20px;
+  top: 6px;
 }
