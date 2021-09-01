@@ -6,9 +6,7 @@
 </div>
 
 <div class="container">
-  <%= render "components/explore-card"%>
-  <%= render "components/explore-card"%>
-  <%= render "components/explore-card"%>
-  <%= render "components/explore-card"%>
-  <%= render "components/explore-card"%>
+  <% @organizations.each do |organization| %>
+    <%= render "components/organization-card", organization: organization%>
+  <% end %>
 </div>

@@ -31,9 +31,8 @@
   </head>
 
   <body>
-    <div class= "wrapper">
-      <%=render "components/navbar"%>
-    </div>
+    <%= render 'shared/flashes' %>
+    <%=render "components/navbar"%>
     <%= yield %>
   </body>
 </html>
