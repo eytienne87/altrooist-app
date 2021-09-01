@@ -1,8 +1,8 @@
 <div class="container">
-  <h1 class="header-quiz">my preferences</h1>
+  <h1 class="header-quiz pb-3">My Preferences</h1>
   <%= simple_form_for(@profile, url: :profile) do |f| %>
     <div id="locations" class="pb-3">
-      <h4 class="subheader-quiz">Tell us more about places you go to in a week:</h4>
+      <h4 class="subheader-quiz pb-2">Tell us more about places you go to in a week:</h4>
       <%= f.simple_fields_for :locations do |location| %>
         <%= render 'location_fields', f: location %>
       <% end %>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div id="interests" class="pb-3">
-      <h4 class="subheader-quiz">Tell us what you care about the most:</h4>
+      <h4 class="subheader-quiz pb-2">Tell us what you care about the most:</h4>
       <%= f.simple_fields_for :interests do |interest| %>
         <%= render 'interest_fields', f: interest %>
       <% end %>
@@ -27,7 +27,7 @@
     </div>
     <div class="row">
       <div class="text-right col-11">
-        <%= f.submit 'Submit', class: 'button' %>
+        <%= f.submit 'Submit', class: 'btn btn-info' %>
       </div>
     </div>
   <% end %>

@@ -18,6 +18,11 @@ input:placeholder-shown {
    color: rgba(220, 220, 220, 0.8);
 }
 
+input:prompt-shown {
+   font-style: italic;
+   color: rgba(220, 220, 220, 0.8);
+}
+
 .fa-plus-circle:hover {
     text-decoration: none;
 }
