@@ -1,0 +1,29 @@
+.my-organization-card img {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.my-organization-card-container {
+    background: $green;
+    margin-top: 50px;
+
+}
+
+.my-organization-card {
+    border: 2px solid $green;
+    position: relative;
+    padding: 10px;
+    bottom: 8px;
+    right: 8px;
+    background: white;
+    margin: 20px auto;
+}
+
+.my-organization-card-top-section {
+    display: flex;
+    align-items: center;
+}
