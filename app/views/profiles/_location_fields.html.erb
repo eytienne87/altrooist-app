@@ -1,19 +1,23 @@
-<div class='nested-fields'>
-  <div class="form-row align-items-center">
-    <div class="col-7">
-      <%= f.input :address,
-                  placeholder: 'e.g.,550 René-Levesque boulevard',
-                  label: 'Address',
-                  label_html: { class: 'label-form' } %>
-    </div>
-    <div class="col-4">
-      <%= f.input :name,
-                  placeholder: 'e.g.,home, work, cottage, etc.',
-                  label: 'Name',
-                  label_html: { class: 'label-form' } %>
-    </div>
-    <div class="col-1">
-      <%= link_to_remove_association '', f, class: 'fas fa-minus-circle form-delete-btn' %>
+<div class="row">
+  <div class="col-12">
+    <div class='nested-fields'>
+      <div class="form-row align-items-center">
+        <div class="col-7">
+          <%= f.input :address,
+                      placeholder: 'e.g., 550 René-Levesque boulevard',
+                      label: 'Address',
+                      label_html: { class: 'label-form' } %>
+        </div>
+        <div class="col-4">
+          <%= f.input :name,
+                      placeholder: 'e.g., home, work, cottage, etc.',
+                      label: 'Name',
+                      label_html: { class: 'label-form' } %>
+        </div>
+        <div class="col-1">
+          <%= link_to_remove_association '', f, class: 'fas fa-minus-circle form-delete-btn' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
