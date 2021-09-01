@@ -1,4 +1,7 @@
-<%= image_tag "altrooist_logo_2.png", alt: "Altrooist Logo", class:"navbar-logo"%>
+<%= link_to root_path do %>
+  <%= image_tag "altrooist_logo_2.png", alt: "Altrooist Logo", class:"navbar-logo"%>
+<% end %>
+
 
 <%= simple_form_for :search, url: root_path, method: :get do |f| %>
   <div class="search-form-control form-group navbar-search-group">
@@ -9,11 +12,19 @@
   </div>
 <% end %>
 
-<div class="navbar_avatar">
-  <%= image_tag "https://avatars.githubusercontent.com/u/86730369?v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-    <%= link_to "My Profile", profile_path, class: "dropdown-item" %>
-    <%= link_to "My Volunteering", my_organizations_path, class: "dropdown-item" %>
-    <%= link_to "My Suggested Organizations", curated_path, class: "dropdown-item" %>
+<% if user_signed_in? %>
+  <div class="navbar_avatar">
+    <%= image_tag "https://avatars.githubusercontent.com/u/86730369?v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+      <%= link_to "Profile", profile_path, class: "dropdown-item" %>
+      <%= link_to "My Organizations", my_organizations_path, class: "dropdown-item" %>
+      <%= link_to "My Suggested Organizations", curated_path, class: "dropdown-item" %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+    </div>
   </div>
-</div>
+
+<% else %>
+  <li class="nav-item">
+    <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+  </li>
+<% end %>
