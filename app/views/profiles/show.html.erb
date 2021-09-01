@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>My Profile</h1>
+  <a class="button" href="<%= edit_profile_path %>">Edit</a>
+
+  <div class="">
+    <p>email address: <%= @profile.email %></p>
+  </div>
+
+  <div class="">
+    <p><%= 'Address'.pluralize(@locations.size) %></p>
+    <% @locations.each do |loc| %>
+      <p><%= loc.name %>: <%= loc.address %></p>
+    <% end %>
+  </div>
+
+  <div class="">
+    <p><%= 'Interest'.pluralize(@interests.size) %></p>
+    <% @interests.each do |interest| %>
+      <p><%= interest.category.name %></p>
+    <% end %>
+  </div>
+</div>
