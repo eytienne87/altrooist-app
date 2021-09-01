@@ -1,19 +1,29 @@
-<%= image_tag "altrooist_logo_2.png", alt: "Altrooist Logo", class:"navbar-logo"%>
+<div class="d-flex align-items-center justify-content-around py-2">
 
-<%= simple_form_for :search, url: root_path, method: :get do |f| %>
-  <div class="search-form-control form-group navbar-search-group">
-    <input class="search-bar string required" type="text" name="search[query]" id="search_query" />
-    <button name="search-bar-button" type="submit" class="search-bar-button">
-      <i class="fas fa-search"></i>
-    </button>
-  </div>
-<% end %>
+  <%= link_to root_path do %>
+    <%= image_tag "altrooist_logo_2.png", alt: "Altrooist Logo", class:"navbar-logo"%>
+  <% end %>
 
-<div class="navbar_avatar">
-  <%= image_tag "https://avatars.githubusercontent.com/u/86730369?v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-    <%= link_to "My Profile", profile_path, class: "dropdown-item" %>
-    <%= link_to "My Volunteering", my_organizations_path, class: "dropdown-item" %>
-    <%= link_to "My Curated Selections", curated_path, class: "dropdown-item" %>
-  </div>
+  <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+    <div class="search-bar">
+      <input class="search-string" type="text" name="search[query]" id="search_query" placeholder ="search by city"/>
+      <search-bar-button name="search-bar-button" type="submit" class="search-bar-button fas fa-search"/>
+    </div>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <div class="navbar_avatar">
+      <%= image_tag "https://avatars.githubusercontent.com/u/86730369?v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <%= link_to "Profile", profile_path, class: "dropdown-item" %>
+        <%= link_to "My Organizations", my_organizations_path, class: "dropdown-item" %>
+        <%= link_to "My Suggested Organizations", curated_path, class: "dropdown-item" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+      </div>
+    </div>
+  <% else %>
+    <li class="nav-item">
+      <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+    </li>
+  <% end %>
 </div>

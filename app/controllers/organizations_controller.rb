@@ -3,8 +3,7 @@ class OrganizationsController < ApplicationController
 
   def curated
     if current_user.profile_pending?
-      flash.alert = "We need to know more before showing organizations around you."
-      redirect_to edit_profile_path
+      redirect_to edit_profile_path, alert: "We need to know more before showing organizations around you."
     end
 
     # @curated = Organization.all
