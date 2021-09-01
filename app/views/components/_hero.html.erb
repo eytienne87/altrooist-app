@@ -1,14 +1,11 @@
 <div class="hero">
   <h1><strong>altrooist</strong></h1>
   <div class="hero-container">
-    <h3>100+ volunteer <br/>
-      opportunities<br/>
-      across Quebec,<br/>
-      prioritized to<br/>
-      suit you best.<br/>
-    </h3>
+    <h3>100+ volunteer opportunities across Quebec, prioritized to suit you best.</h3>
     <div>
-      <%= link_to "Explore", edit_profile_path, class: "button" %>
+      <%= link_to "Volunteer now!", edit_profile_path, class: "btn btn-info" %>
     </div>
+    <%# <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D" class="hero-img" alt=""> %>
+    <%= image_tag("cover", class:"hero-img")%>
   </div>
 </div>
