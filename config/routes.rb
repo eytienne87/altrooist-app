@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resource :profile, only: [:update, :edit]
+  resource :profile, only: [:show, :update, :edit]
 
   get '/organizations/curated', to: 'organizations#curated', as: :curated
   get '/organizations/:id', to: 'organizations#show', as: :organization
