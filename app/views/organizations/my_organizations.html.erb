@@ -1,13 +1,17 @@
-<h1>My Organizations</h1>
-<% @my_organizations.each do |mo| %>
-  <p><%= image_tag(mo.photo_url) %></p>
-  <p><%= mo.name %></p>
-  <p><%= mo.address %></p>
-  <p><%= mo.phone %></p>
-  <p><%= mo.email %></p>
-  <p><%= link_to "View Journal Entries", organization_journal_entries_path(mo) %></p>
+<div class="container">
+  <h1 class="org-title">My Organizations</h1>
+  <% @my_organizations.each do |mo| %>
+    <div class="org-container">
+      <p><%= image_tag(mo.photo_url) %></p>
+      <p><h3><%= mo.name %></p></h3>
+      <p><%= mo.address %></p>
+      <p><%= mo.phone %></p>
+      <p><%= mo.email %></p>
+      <p><%= link_to "View Journal Entries", organization_journal_entries_path(mo) %></p>
 
-  <%=  link_to(new_organization_journal_entry_path(mo)) do %>
-    <p><i class="fas fa-edit"></i></p>
+      <%=  link_to(new_organization_journal_entry_path(mo)) do %>
+        <p><i class="fas fa-edit"></i></p>
+      <% end %>
+    </div>
   <% end %>
-<% end %>
+</div>
