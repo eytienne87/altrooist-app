@@ -1,13 +1,6 @@
-<h1>My Organizations</h1>
-<% @my_organizations.each do |mo| %>
-  <p><%= image_tag(mo.photo_url) %></p>
-  <p><%= mo.name %></p>
-  <p><%= mo.address %></p>
-  <p><%= mo.phone %></p>
-  <p><%= mo.email %></p>
-  <p><%= link_to "View Journal Entries", organization_journal_entries_path(mo) %></p>
-
-  <%=  link_to(new_organization_journal_entry_path(mo)) do %>
-    <p><i class="fas fa-edit"></i></p>
+<div class="container">
+  <h3>My Organizations</h3>
+  <% @my_organizations.each do |mo| %>
+    <%= render "components/my-organization-card", mo: mo %>
   <% end %>
-<% end %>
+</div>
