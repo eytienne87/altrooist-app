@@ -26,3 +26,8 @@
 .search-bar ::placeholder {
   color:  #D1D1D1;
 }
+
+.main-navbar {
+    border-bottom: 1px solid $green;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
