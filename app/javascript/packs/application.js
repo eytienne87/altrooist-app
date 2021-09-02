@@ -28,8 +28,8 @@ require("@nathanvda/cocoon")
 import "bootstrap";
 
 // Internal imports, e.g:
-import { handleClick } from '../components/email_alert';
+import { closeAlerts } from '../components/close_alerts';
 
 document.addEventListener('turbolinks:load', () => {
-  handleClick();
+  closeAlerts();
 });
