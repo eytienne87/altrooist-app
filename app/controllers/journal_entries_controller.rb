@@ -9,6 +9,14 @@ class JournalEntriesController < ApplicationController
   def new
     @journal_entry = JournalEntry.new
     @organization = Organization.find(params[:organization_id])
+    if current_user.journal_entries.where(organization: @organization).empty?
+      current_user.journal_entries.create!(
+        organization: @organization,
+        emoji: 'far fa-grin-stars',
+        content: "This is the very beginning of your journal entries with #{@organization.name}"
+      )
+      redirect_to organization_journal_entries_path(@organization)
+    end
   end
 
   def create

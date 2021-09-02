@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
 
   def update
     if current_user.update(strong_params)
-      redirect_to profile_path
+      redirect_to curated_path
     else
       render :edit
     end

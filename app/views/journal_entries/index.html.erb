@@ -1,5 +1,6 @@
 <div class="container">
   <h1 class="journal-title">Journal Entries</h1>
+  <%= link_to "Add a new entry", new_organization_journal_entry_path(@organization), class: "btn btn-info" %>
   <%= @journal_entries.each do |journal| %>
     <div class="journal-entry-container">
       <div class="journal-entry">
