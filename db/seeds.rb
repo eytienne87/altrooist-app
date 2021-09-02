@@ -178,7 +178,7 @@ Organization.create!(
 Organization.create!(
   name: 'Sauvetage Animal Rescue',
   email: 'info@sar.quebec',
-  phone: '514-773-3911',
+  phone: '(514) 773-3911',
   photo_url: 'SAR.jpg',
   description: "Sauvetage Animal Rescue's core mission is to help animals in need",
   address: "124 Maisonneuve Boulevard O, Montréal, QC H2X 0S1",
@@ -189,7 +189,7 @@ Organization.create!(
 Organization.create!(
   name: "Helping Seniors",
   email: 'info@helpingsenior.ca',
-  phone: '(514)209-5888',
+  phone: '(514) 209-5888',
   photo_url: 'helping.jpg',
   description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
   address: "3155 Rue Hochelaga, Montréal, QC H1W 1G4",
@@ -197,5 +197,58 @@ Organization.create!(
   longitude: -73.5000000,
   category: elderly
 )
+
+#--------------------Add 4 more organizations--------------------
+
+Organization.create!(
+  name: "The Yellow Door",
+  email: 'info@yellowdoor.org',
+  phone: '(514) 845-2600',
+  photo_url: 'the_yellow_door.png',
+  description: "Established in 1972, our outreach program aims to prevent premature institutionalization by fostering intergenerational relationships. We work toward this by matching youth volunteers ​with seniors living in our community.",
+  address: "3625 Aylmer St, Montreal, QC H2X 2C3",
+  latitude: 0,
+  longitude: 0,
+  category: elderly
+)
+
+Organization.create!(
+  name: "Native Women's Shelter of Montreal",
+  email: 'nakuset@gmail.com ',
+  phone: '1-866-403-4688',
+  photo_url: 'native_womens.jpg',
+  description: "The NWSM is constantly evolving and striving to offer the best possible services to Aboriginal women and children. We are open 24 hours a day 365 days a year and offer in-house programs as well as an outreach program. We meet residents’ basic needs of shelter, food, clothing, hygiene, and dignity, as well as provide twenty workshops a month which range in content from art therapy to traditional teachings.",
+  address: "P.O. Box 183, Station St. Jacques, Montreal, Quebec,H3C 2S1",
+  latitude: 0,
+  longitude: 0,
+  category: homelessness
+)
+
+Organization.create!(
+  name: "Resilience Montreal",
+  email: 'resilience.montreal@gmail.com',
+  phone: '(438) 828-8995',
+  photo_url: 'resilience_montreal.png',
+  description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
+  address: "4000 Sainte Catherine Street West, Montreal Quebec H3Z 1P1",
+  latitude: 0,
+  longitude: 0,
+  category: homelessness
+)
+
+Organization.create!(
+  name: "Dans La Rue",
+  email: 'info@danslarue.org',
+  phone: '(514) 526-5222',
+  photo_url: 'dans_la_rue.png',
+  description: 'Founded by Father Emmett Johns “Pops” in 1988, Dans la rue helps homeless and at-risk youth. With dedication, empathy and respect, and with the support of the community, Dans la rue cares for their immediate needs and helps them acquire the skills and resources needed to lead more autonomous and rewarding lives.',
+  address: "533 Ontario Street East, Montreal Quebec H2L 1N8",
+  latitude: 0,
+  longitude: 0,
+  category: homelessness
+)
+
+
+
 
 puts "Finished"
