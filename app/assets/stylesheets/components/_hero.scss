@@ -2,7 +2,7 @@
     background-color: $green;
     background-size: cover;
     padding: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     position: relative;
 }
 .hero h1 {
@@ -13,18 +13,20 @@
 }
 .hero h3 {
     color: white;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     margin-left: 0;
     line-height: 1.6;
     font-size: 18px;
     width: 80%;
 }
 .hero-img {
-    width: 175px;
+    width: 160px;
+    height: 190px;
     position: absolute;
-    bottom: -40px;
+    bottom: -105px;
     right: 24px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 .carousel-container {
     width: 175px;

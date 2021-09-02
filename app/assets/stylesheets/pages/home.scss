@@ -44,10 +44,14 @@ p {
 .explore-page {
   font-size: 24px;
   color: $green;
+  margin-bottom: -20px;
 }
 
 .explore-page i {
   font-size: 20px;
   color: $green;
-  padding-bottom: 8px;
+}
+
+.explore-page h3 {
+  margin-bottom: 0;
 }
