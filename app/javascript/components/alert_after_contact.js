@@ -1,12 +1,12 @@
-const handleClick = () => {
-  window.alert('Thank you for volunteering with us! Welcome on board 🙌🏻')
-};
+import swal from 'sweetalert';
 
-const alertOnContact = () => {
-  console.log('prout');
-  const contactButton = document.getElementById("contactOrgButton");
+const alertOnContact = (selector, options = {}, callback = () => {}) => {
+  const contactButton = document.querySelector(selector);
   if (contactButton) {
-    contactButton.addEventListener('click', handleClick);
+    contactButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      swal(options).then(callback);
+    });
   }
 };
 

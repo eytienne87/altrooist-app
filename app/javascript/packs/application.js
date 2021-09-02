@@ -33,5 +33,12 @@ import { alertOnContact } from '../components/alert_after_contact';
 
 document.addEventListener('turbolinks:load', () => {
   closeAlerts();
-  alertOnContact();
+  alertOnContact('#contactOrgButton', {
+    title: "Thank you for volunteering with us!",
+    text: "Welcome aboard 🙌🏻",
+    icon: "success"
+  }, () => {
+    const hiddenLink = document.getElementById('hiddenLink');
+    hiddenLink.click();
+  });
 });
