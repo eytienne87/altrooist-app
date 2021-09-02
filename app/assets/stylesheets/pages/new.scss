@@ -10,17 +10,23 @@
   flex: 0 0 30%;
   margin-bottom: 8px;
   font-size: 18px;
+  display: block;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .category-item label {
   position: relative;
 }
 
+.category-item i {
+  font-size: 40px;
+}
+
 .category-selector {
   position: absolute;
   transform: scale(0);
 }
-
 
 .category-selector + label {
   display: block;
@@ -29,17 +35,19 @@
   width: 100%;
   font-size: 20px;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   border: 1px solid #EAEAEA;
   border-radius: 4px;
   background-color: #fff;
-  color: #eee;
+  color: rgba(50, 91, 32, 0.25);
 }
+
+// Checking & Animation //
 
 @keyframes stamp {
   from {
     opacity: 0;
-    transform: scale(3)
+    transform: scale(1.25)
   }
   to {
     opacity: 1;
@@ -51,7 +59,7 @@
   background-color: #fff;
   color: $green !important;
   animation-name: stamp;
-  animation-duration: 0.125s;
+  animation-duration: 0.500s;
   animation-timing-function: belzier(0, 1.9, 1);
   position: relative;
   z-index: 99
@@ -64,11 +72,26 @@
   left: 0;
   right: 0;
   border: 4px dashed #325B20;
+  border-radius: 4px;
 }
 
-// Emojis //
+// Legend / Content //
+
+.journal_entry_emoji legend {
+height: 0;
+}
+
+#journal_entry_content {
+ background: #fff;
+}
+// Label / placeholder //
 
 .label-styling {
  font-family: $body-font;
  color: black;
+}
+
+#journal_entry_content::placeholder {
+  color: #D1D1D1;
+  font-style: italic;
 }
