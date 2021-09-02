@@ -2,26 +2,26 @@
   <h1 class="header-quiz pb-3">My Profile</h1>
   <%= simple_form_for(@profile, url: :profile) do |f| %>
     <div id="locations" class="pb-3">
-      <h4 class="subheader-quiz pb-2">Tell us more about locations you frequent. Around which places would you like to orient your search results?</h4>
+      <h4 class="subheader-quiz pb-2">Near which locations would you like to volunteer?</h4>
       <%= f.simple_fields_for :locations do |location| %>
         <%= render 'location_fields', f: location %>
       <% end %>
       <div class="links">
         <%= link_to_add_association f, :locations, class: 'd-block form-add-btn' do %>
           <%= icon("fas", "plus-circle") %>
-          Add another place
+          Add another location
         <% end %>
       </div>
     </div>
     <div id="interests" class="pb-3">
-      <h4 class="subheader-quiz pb-2">Tell us more about what moves you.  What field of work would you find most fulfilling?</h4>
+      <h4 class="subheader-quiz pb-2">For which causes would you like to volunteer?</h4>
       <%= f.simple_fields_for :interests do |interest| %>
         <%= render 'interest_fields', f: interest %>
       <% end %>
       <div class="links">
         <%= link_to_add_association f, :interests, class: 'd-block form-add-btn' do %>
           <%= icon("fas", "plus-circle") %>
-          Add interest
+          Add another cause
         <% end %>
       </div>
     </div>
