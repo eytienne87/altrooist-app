@@ -15,7 +15,7 @@ class OrganizationsController < ApplicationController
     # Now get top 5 organizations closest to each location.
     @curated_organizations = []
     locations.each do |location|
-      organizations_near_location = Organization.where(category: current_user.categories).near(location,10)
+      organizations_near_location = Organization.where(category: current_user.categories).near(location,30)
       organizations_near_location.each do |org|
         @curated_organizations << CuratedOrganization.new(organization: org, location: location)
       end
