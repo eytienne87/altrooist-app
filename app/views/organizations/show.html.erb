@@ -1,12 +1,17 @@
 <div class="container">
   <div class="organization-profile">
     <h1><%= @org.name %></h1>
-    <p><%= image_tag(@org.photo_url)%></p>
-    <p><%= @org.email %></p>
-    <p><%= @org.phone %></p>
-    <p><%= @org.address %></p>
-    <p><%= @org.description %></p>
-
+    <%= image_tag(@org.photo_url)%>
+    <div class="organization-profile-details">
+      <p><%= @org.email %></p>
+      <p><%= @org.phone %></p>
+      <p><%= @org.address %></p>
+    </div>
+    <div class="organization-profile-info">
+      <h2>About:</h2>
+      <p><%= @org.description %></p>
+    </div>
+    <hr>
     <% if @first_entry %>
       <form class="organization-contact-form" action="<%= new_organization_journal_entry_path(@org) %>">
         <textarea placeholder="Contact <%= @org.name %>"></textarea>

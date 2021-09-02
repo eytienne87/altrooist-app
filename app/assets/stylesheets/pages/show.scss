@@ -1,11 +1,9 @@
 .organization-profile {
-  border: 2px solid $green;
-  position: relative;
-  padding: 10px;
-  bottom: 8px;
-  right: 8px;
-  background: white;
-  margin: 20px auto;
+    border: 2px solid $green;
+    padding: 10px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .organization-contact-form {
