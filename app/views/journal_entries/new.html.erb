@@ -1,7 +1,14 @@
-<h1>New journal entry</h1>
-
-<%= simple_form_for([@organization, @journal_entry]) do |f| %>
-  <%= f.input :content %>
-  <%= f.input :emoji, as: :radio_buttons, collection: JournalEntry::EMOJIS %>
-  <%= f.submit 'Submit' %>
-<% end %>
+<div class="container">
+  <h1>New journal entry</h1>
+  <%= simple_form_for([@organization, @journal_entry]) do |f| %>
+    <%= f.input :content, placeholder: 'i.e. This has been an awesome experience, the best part was...' %>
+    <%= f.input :emoji,
+                collection_wrapper_tag: 'div',
+                collection_wrapper_class: 'category-wrapper',
+                item_wrapper_class: 'category-item',
+                input_html: {class: 'category-selector'},
+                as: :radio_buttons,
+                collection: JournalEntry::EMOJIS %>
+    <%= f.submit 'Submit', class: "btn btn-info w-100" %>
+  <% end %>
+</div>
