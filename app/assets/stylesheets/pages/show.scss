@@ -1,0 +1,18 @@
+.organization-profile {
+  border: 2px solid $green;
+  position: relative;
+  padding: 10px;
+  bottom: 8px;
+  right: 8px;
+  background: white;
+  margin: 20px auto;
+}
+
+.organization-contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.organization-contact-form textarea {
+  margin-bottom: 16px;
+}
