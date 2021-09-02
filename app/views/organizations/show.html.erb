@@ -9,7 +9,7 @@
   <% if @first_entry %>
     <form action="<%= new_organization_journal_entry_path(@org) %>">
       <input type="text" placeholder="Contact <%= @org.name %>">
-      <input type="submit">
+      <input type="submit" id="contactOrgButton">
     </form>
   <% end %>
 </div>

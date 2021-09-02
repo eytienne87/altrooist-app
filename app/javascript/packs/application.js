@@ -29,7 +29,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { closeAlerts } from '../components/close_alerts';
+import { alertOnContact } from '../components/alert_after_contact';
 
 document.addEventListener('turbolinks:load', () => {
   closeAlerts();
+  alertOnContact();
 });
