@@ -248,7 +248,4 @@ Organization.create!(
   category: homelessness
 )
 
-
-
-
 puts "Finished"
