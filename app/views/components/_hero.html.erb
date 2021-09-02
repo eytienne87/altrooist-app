@@ -5,6 +5,19 @@
     <div>
     <%= link_to "Volunteer now!", curated_path, class: "btn btn-info" %>
     </div>
-    <%= image_tag("hero-image.jpg", class:"hero-img")%>
+
+    <div class="carousel-container" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("hero-image.jpg", class:"hero-img")%>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("hero-image.jpg", class:"hero-img")%>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("hero-image.jpg", class:"hero-img")%>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
