@@ -1,3 +1,5 @@
+// Emojis //
+
 .category-wrapper {
   display: flex;
   justify-content: space-between;
@@ -62,4 +64,11 @@
   left: 0;
   right: 0;
   border: 4px dashed #325B20;
+}
+
+// Emojis //
+
+.label-styling {
+ font-family: $body-font;
+ color: black;
 }

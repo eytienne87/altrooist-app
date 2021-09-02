@@ -1,7 +1,10 @@
 <div class="container">
-  <h1>New journal entry</h1>
+  <h1 class="h3">New journal entry</h1>
   <%= simple_form_for([@organization, @journal_entry]) do |f| %>
-    <%= f.input :content, placeholder: 'i.e. This has been an awesome experience, the best part was...' %>
+    <%= f.input :content,
+                placeholder: 'i.e. This has been an awesome experience, the best part about it was...',
+                label: 'Write down your thoughts:',
+                label_html: { class: 'label-styling'} %>
     <%= f.input :emoji,
                 collection_wrapper_tag: 'div',
                 collection_wrapper_class: 'category-wrapper',
