@@ -218,7 +218,7 @@ Organization.create!(
   phone: '1-866-403-4688',
   photo_url: 'native_womens.jpg',
   description: "The NWSM is constantly evolving and striving to offer the best possible services to Aboriginal women and children. We are open 24 hours a day 365 days a year and offer in-house programs as well as an outreach program. We meet residents’ basic needs of shelter, food, clothing, hygiene, and dignity, as well as provide twenty workshops a month which range in content from art therapy to traditional teachings.",
-  address: "P.O. Box 183, Station St. Jacques, Montreal, Quebec,H3C 2S1",
+  address: "4000 Saint-Catherine St W, Westmount, Quebec H3Z 1P1",
   latitude: 0,
   longitude: 0,
   category: homelessness
