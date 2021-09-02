@@ -207,8 +207,8 @@ Organization.create!(
   photo_url: 'the_yellow_door.png',
   description: "Established in 1972, our outreach program aims to prevent premature institutionalization by fostering intergenerational relationships. We work toward this by matching youth volunteers ​with seniors living in our community.",
   address: "3625 Aylmer St, Montreal, QC H2X 2C3",
-  latitude: 0,
-  longitude: 0,
+  latitude: 45.5088347,
+  longitude: -73.5803374,
   category: elderly
 )
 
@@ -218,9 +218,9 @@ Organization.create!(
   phone: '1-866-403-4688',
   photo_url: 'native_womens.jpg',
   description: "The NWSM is constantly evolving and striving to offer the best possible services to Aboriginal women and children. We are open 24 hours a day 365 days a year and offer in-house programs as well as an outreach program. We meet residents’ basic needs of shelter, food, clothing, hygiene, and dignity, as well as provide twenty workshops a month which range in content from art therapy to traditional teachings.",
-  address: "4000 Saint-Catherine St W, Westmount, Quebec H3Z 1P1",
-  latitude: 0,
-  longitude: 0,
+  address: "1025 Rue Saint-Jacques, Montreal, QC H3C 1G8",
+  latitude: 45.4968444,
+  longitude: -73.5649763,
   category: homelessness
 )
 
@@ -230,9 +230,9 @@ Organization.create!(
   phone: '(438) 828-8995',
   photo_url: 'resilience_montreal.png',
   description: "Seeing that we are living longer, many of us, at some point, may be faced with helping or assisting our parents, an elderly friend or isolated neighbour. Whatever your question or situation, Helping Seniors is here to help.",
-  address: "4000 Sainte Catherine Street West, Montreal Quebec H3Z 1P1",
-  latitude: 0,
-  longitude: 0,
+  address: "4000 Saint-Catherine St W, Montreal Quebec H3Z 1P1",
+  latitude: 45.48895,
+  longitude: -73.5867323,
   category: homelessness
 )
 
@@ -242,9 +242,9 @@ Organization.create!(
   phone: '(514) 526-5222',
   photo_url: 'dans_la_rue.png',
   description: 'Founded by Father Emmett Johns “Pops” in 1988, Dans la rue helps homeless and at-risk youth. With dedication, empathy and respect, and with the support of the community, Dans la rue cares for their immediate needs and helps them acquire the skills and resources needed to lead more autonomous and rewarding lives.',
-  address: "533 Ontario Street East, Montreal Quebec H2L 1N8",
-  latitude: 0,
-  longitude: 0,
+  address: "533 Rue Ontario E, Montreal Quebec H2L 1N8",
+  latitude: 45.517731,
+  longitude: -73.5670937,
   category: homelessness
 )
 
