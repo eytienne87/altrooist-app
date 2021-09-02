@@ -4,22 +4,20 @@
 }
 
 .journal-entry-container {
-  background: $green;
-  margin-top: 24px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    margin-top: 24px;
 }
 
 .journal-entry {
-  border: 2px solid $green;
-  position: relative;
-  padding: 10px;
-  padding-top: 2px;
-  bottom: 8px;
-  right: 8px;
-  background: white;
+    border: 2px dashed $green;
+    padding: 10px;
+    padding-top: 2px;
+    background: white;
 }
 
-.journal-entry-emoji {
-  font-size: 20px;
-  color: $coral;
-  margin-bottom: 0;
+journal-entry-emoji {
+    font-size: 20px;
+    color: $coral;
+    margin-bottom: 0;
+    text-align: right;
 }
