@@ -14,3 +14,31 @@
 .organization-contact-form textarea {
   margin-bottom: 16px;
 }
+
+.organization-profile img {
+  max-width: 40%;
+}
+
+.organization-profile-details {
+  color: #ddd !important;
+  padding-left: 14px;
+}
+
+.organization-profile-info h2,
+.organization-contact {
+  color: $green;
+  margin-top: 16px;
+}
+
+.organization-profile-info p {
+  line-height: 1.6;
+}
+
+.organization-profile-top {
+  display: flex;
+  color: #bbb;
+}
+
+.organization-profile-details p {
+  padding-left: 14px;
+}
