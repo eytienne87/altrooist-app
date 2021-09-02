@@ -29,7 +29,16 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { closeAlerts } from '../components/close_alerts';
+import { alertOnContact } from '../components/alert_after_contact';
 
 document.addEventListener('turbolinks:load', () => {
   closeAlerts();
+  alertOnContact('#contactOrgButton', {
+    title: "Thank you for volunteering with us!",
+    text: "Welcome aboard 🙌🏻",
+    icon: "success"
+  }, () => {
+    const hiddenLink = document.getElementById('hiddenLink');
+    hiddenLink.click();
+  });
 });
