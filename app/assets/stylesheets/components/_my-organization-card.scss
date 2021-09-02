@@ -27,3 +27,27 @@
     display: flex;
     align-items: center;
 }
+
+.my-organization-card h3 {
+    color: $green;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.my-organization-card h4 {
+    font-size: .8rem;
+}
+
+.my-organization-card hr {
+    display: block;
+    height: 1px;
+    background-color: $green;
+    width: 90%;
+}
+
+.my-organization-card-bottom-section {
+    display: flex;
+    justify-content: space-between;
+}

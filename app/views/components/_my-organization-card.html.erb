@@ -1,16 +1,21 @@
 <div class="my-organization-card-container">
-  <div class=my-organization-card>
+  <div class="my-organization-card">
     <div class="my-organization-card-top-section">
       <%= image_tag(mo.photo_url) %>
-        <p><%= mo.name %></p>
+      <div class="my-organization-card-info-headers">
+        <h3 class="my-organization-card-title"><%= mo.name %></h3>
+        <h4 class="my-organization-match text-dark">#<%= mo.category.name %></h4>
+      </div>
     </div>
+    <hr class="my-organization-card-info-divider">
+    <div>
       <p><%= mo.address %></p>
-      <p><%= mo.phone %></p>
-      <p><%= mo.email %></p>
-      <p><%= link_to "View Journal Entries", organization_journal_entries_path(mo) %></p>
-
+    </div>
+    <div class="my-organization-card-bottom-section">
       <%=  link_to(new_organization_journal_entry_path(mo)) do %>
         <p><i class="fas fa-edit"></i></p>
       <% end %>
+      <%= link_to "View Journal Entries", organization_journal_entries_path(mo) %>
+    </div>
   </div>
 </div>
