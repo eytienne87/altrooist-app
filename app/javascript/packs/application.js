@@ -38,6 +38,7 @@ document.addEventListener('turbolinks:load', () => {
     text: "Welcome aboard 🙌🏻",
     icon: "success"
   }, () => {
+    // console.log('prout');
     const hiddenLink = document.getElementById('hiddenLink');
     hiddenLink.click();
   });

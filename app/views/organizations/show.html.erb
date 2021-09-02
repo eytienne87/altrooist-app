@@ -10,7 +10,7 @@
     <% if @first_entry %>
       <form class="organization-contact-form" action="<%= new_organization_journal_entry_path(@org) %>">
         <textarea placeholder="Contact <%= @org.name %>"></textarea>
-        <input type="submit" value="Send" class="btn btn-info">
+        <input type="submit" value="Send" class="btn btn-info" id="contactOrgButton">
       </form>
     <% end %>
   </div>
