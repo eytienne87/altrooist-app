@@ -11,6 +11,6 @@ class CuratedOrganization
   end
 
   def humanize_distance
-    "#{distance} km from your #{location.name}"
+    "#{distance} km from <span class='badge badge-secondary'>#{location.name}</span>".html_safe
   end
 end
