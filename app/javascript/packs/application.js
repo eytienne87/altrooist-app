@@ -34,11 +34,10 @@ import { alertOnContact } from '../components/alert_after_contact';
 document.addEventListener('turbolinks:load', () => {
   closeAlerts();
   alertOnContact('#contactOrgButton', {
-    title: "Thank you for volunteering with us!",
-    text: "Welcome aboard 🙌🏻",
+    text: "Thank you for volunteering with us!",
+    title: "Welcome aboard 🙌🏻",
     icon: "success"
   }, () => {
-    // console.log('prout');
     const hiddenLink = document.getElementById('hiddenLink');
     hiddenLink.click();
   });
