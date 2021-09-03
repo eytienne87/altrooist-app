@@ -32,7 +32,7 @@ animals = Category.create!(
   name: "Animal Welfare"
 )
 elderly = Category.create!(
-  name: "Senior's Assistance"
+  name: "Senior Care"
 )
 mental_health = Category.create!(
   name: "Mental Health"
