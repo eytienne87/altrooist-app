@@ -32,7 +32,7 @@ animals = Category.create!(
   name: "Animal Welfare"
 )
 elderly = Category.create!(
-  name: "Senior's Assistance"
+  name: "Senior Care"
 )
 mental_health = Category.create!(
   name: "Mental Health"
@@ -121,7 +121,7 @@ Organization.create!(
   name: 'SPCA',
   email: 'cs@spca.ca',
   phone: '(514) 824-0013',
-  photo_url: 'spca.jpg',
+  photo_url: 'spca2.jpg',
   description: "Founded in Montreal in 1869, the Society for the Prevention of Cruelty to Animals (now known simply as the Montreal SPCA) was the first animal-welfare organization in Canada.",
   address: "5215 Rue Jean-Talon O, Montréal, QC H4P 1X4",
   latitude: 45.495960,
@@ -154,7 +154,7 @@ Organization.create!(
   name: 'Benedict Labre House',
   email: 'cs@labrehouse.ca',
   phone: '(514) 864-7725',
-  photo_url: 'lamaison.jpg',
+  photo_url: 'benoit2.png',
   description: "The Benedict Labre House is a home that nourishes the body, mind and soul of people in need. It is a volunteer driven charity deeply rooted in the Montreal community since 1952. The House nurtures and empowers our guests through support programs based on the principles of respect and a sense of belonging.",
   address: "308 Rue Young, Montréal, QC H3C 2G2",
   latitude: 45.493900,
