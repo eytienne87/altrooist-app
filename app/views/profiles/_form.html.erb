@@ -1,34 +1,36 @@
 <div class="container">
-  <h1 class="header-quiz pb-3">My Profile</h1>
-  <%= simple_form_for(@profile, url: :profile) do |f| %>
-    <div id="locations" class="pb-3">
-      <h4 class="subheader-quiz pb-2">Tell us more about places you go in a week:</h4>
-      <%= f.simple_fields_for :locations do |location| %>
-        <%= render 'location_fields', f: location %>
-      <% end %>
-      <div class="links">
-        <%= link_to_add_association f, :locations, class: 'd-block form-add-btn' do %>
-          <%= icon("fas", "plus-circle") %>
-          Add another place
+  <div class="organization-profile">
+    <h1 class="header-quiz pb-3">My Profile</h1>
+    <%= simple_form_for(@profile, url: :profile) do |f| %>
+      <div id="locations" class="pb-3">
+        <h4 class="subheader-quiz pb-2">Tell us more about places you go in a week:</h4>
+        <%= f.simple_fields_for :locations do |location| %>
+          <%= render 'location_fields', f: location %>
         <% end %>
+        <div class="links">
+          <%= link_to_add_association f, :locations, class: 'd-block form-add-btn' do %>
+            <%= icon("fas", "plus-circle") %>
+            Add another place
+          <% end %>
+        </div>
       </div>
-    </div>
-    <div id="interests" class="pb-3">
-      <h4 class="subheader-quiz pb-2">Tell us what you care about the most:</h4>
-      <%= f.simple_fields_for :interests do |interest| %>
-        <%= render 'interest_fields', f: interest %>
-      <% end %>
-      <div class="links">
-        <%= link_to_add_association f, :interests, class: 'd-block form-add-btn' do %>
-          <%= icon("fas", "plus-circle") %>
-          Add interest
+      <div id="interests" class="pb-3">
+        <h4 class="subheader-quiz pb-2">Tell us what you care about the most:</h4>
+        <%= f.simple_fields_for :interests do |interest| %>
+          <%= render 'interest_fields', f: interest %>
         <% end %>
+        <div class="links">
+          <%= link_to_add_association f, :interests, class: 'd-block form-add-btn' do %>
+            <%= icon("fas", "plus-circle") %>
+            Add interest
+          <% end %>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="text-right col-11">
-        <%= f.submit 'Save', class: 'btn btn-info' %>
+      <div class="row">
+        <div class="text-right col-11">
+          <%= f.submit 'Save', class: 'btn btn-info' %>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

@@ -1,22 +1,26 @@
 <div class="container">
-  <h1>My Profile</h1>
-  <a class="button" href="<%= edit_profile_path %>">Edit</a>
 
-  <div class="">
-    <p>email address: <%= @profile.email %></p>
-  </div>
+  <div class="organization-profile">
+    <div class="d-flex justify-content-between align-items-start">
+      <h1 class="mr-3">My Profile</h1>
+      <a class="btn btn-info btn-sm" href="<%= edit_profile_path %>">Edit</a>
+    </div>flex
 
-  <div class="">
-    <p><%= 'Address'.pluralize(@locations.size) %></p>
-    <% @locations.each do |loc| %>
-      <p><%= loc.name %>: <%= loc.address %></p>
-    <% end %>
-  </div>
 
-  <div class="">
-    <p><%= 'Interest'.pluralize(@interests.size) %></p>
-    <% @interests.each do |interest| %>
-      <p><%= interest.category.name %></p>
-    <% end %>
+    <h3 class="ml-0"><%= icon("fas", "location-arrow") %> <%= 'Address'.pluralize(@locations.size) %></h3>
+    <ul class="list-unstyled">
+      <% @locations.each do |loc| %>
+        <li class="text-dark"><strong><%= loc.name %></strong> <%= loc.address %></li>
+      <% end %>
+    </ul>
+
+    <hr>
+
+    <h3 class="ml-0"><%= icon("fas", "star") %> <%= 'Interest'.pluralize(@interests.size) %></h3>
+    <ul class="list-unstyled">
+      <% @interests.each do |interest| %>
+        <li class="text-dark"><%= interest.category.name %></li>
+      <% end %>
+    </ul>
   </div>
 </div>
