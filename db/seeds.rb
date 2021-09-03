@@ -100,19 +100,19 @@ interest1 = Interest.create!(
 )
 interest2 = Interest.create!(
   category: elderly,
-  user: user_2
+  user: user_1
 )
 interest3 = Interest.create!(
   category: mental_health,
-  user: user_3
+  user: user_1
 )
 interest4 = Interest.create!(
   category: homelessness,
-  user: user_4
+  user: user_1
 )
 interest5 = Interest.create!(
   category: education,
-  user: user_5
+  user: user_1
 )
 
 # ----------Organizations------------
