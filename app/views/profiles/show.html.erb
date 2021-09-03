@@ -16,7 +16,7 @@
 
     <hr>
 
-    <h3 class="ml-0"><%= icon("fas", "star") %> <%= 'Interest'.pluralize(@interests.size) %></h3>
+    <h3 class="ml-0"><%= icon("fas", "star") %> <%= 'Cause'.pluralize(@interests.size) %></h3>
     <ul class="list-unstyled">
       <% @interests.each do |interest| %>
         <li class="text-dark"><%= interest.category.name %></li>
