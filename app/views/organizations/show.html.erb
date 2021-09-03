@@ -1,5 +1,6 @@
 <div class="container">
   <div class="organization-profile">
+    <%= link_to "#{icon("fas", "caret-left")} Back".html_safe, curated_path, class: "btn btn-link px-0" %>
     <h1><%= @org.name %></h1>
     <div class="organization-profile-top">
       <%= image_tag(@org.photo_url)%>

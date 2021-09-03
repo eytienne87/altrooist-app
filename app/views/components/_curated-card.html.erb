@@ -11,9 +11,13 @@
     <div class="curated-card-info-details">
       <div class="curated-card-distance-section">
         <i class="fas fa-location-arrow"></i>
-        <p class="curated-card-distance"><%=co.humanize_distance%></p>
+        <p class="curated-card-distance">
+          <%=co.humanize_distance%>
+        </p>
       </div>
-      <p class="curated-card-address"><%= co.organization.address %></p>
+      <p class="curated-card-address">
+        <small><%= co.organization.address %></small>
+      </p>
       <div class="text-right">
         <%= link_to "View Details", organization_path(co.organization) %>
       </div>
