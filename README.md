@@ -1,1 +1,7 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Altrooist
+
+Altrooist is a an app that suggests volunteer organizations based on location and preferences.
+
+The app was built at Le Wagon Montreal in the Summer of 2021 by Andrea Pirolo, Van Thao Huynh and myself.
+
+Please reach out to us on Linkedin if you have any questions.
